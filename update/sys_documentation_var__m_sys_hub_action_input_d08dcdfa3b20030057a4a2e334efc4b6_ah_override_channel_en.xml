@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="ah_override_channel" label="Override Channel" language="en" table="var__m_sys_hub_action_input_d08dcdfa3b20030057a4a2e334efc4b6">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>ah_override_channel</element>
+            <help/>
+            <hint/>
+            <label>Override Channel</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_d08dcdfa3b20030057a4a2e334efc4b6</name>
+            <plural>Override Channel</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-08-16 17:27:10</sys_created_on>
+            <sys_id>e88dcdfa3b20030057a4a2e334efc4de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Override Channel</sys_name>
+            <sys_package display_value="Slack2" source="sn_slack2_ah">c50b94663b20030057a4a2e334efc475</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Slack2">c50b94663b20030057a4a2e334efc475</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d08dcdfa3b20030057a4a2e334efc4b6_ah_override_channel_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-08-16 17:27:10</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
