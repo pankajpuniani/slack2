@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_slack2_ah.SlackErrorHandler</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>SlackErrorHandler</name>
+        <script><![CDATA[var SlackErrorHandler = Class.create();
+SlackErrorHandler.prototype = {
+    initialize: function() {
+    },
+	
+	throwException : function(status_code, message){
+		var errorMsg = 'Error occured while posting slack message. Status code: ' + status_code; + '.';
+      	if(!gs.nil(message))
+    		errorMsg = errorMsg + " Message: " + inputs.response + ".";
+      
+      	gs.info(errorMsg);
+      	throw errorMsg;
+	},
+	
+    type: 'SlackErrorHandler'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-15 21:14:23</sys_created_on>
+        <sys_id>c827b0ae3b20030057a4a2e334efc4d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SlackErrorHandler</sys_name>
+        <sys_package display_value="Slack2" source="sn_slack2_ah">c50b94663b20030057a4a2e334efc475</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Slack2">c50b94663b20030057a4a2e334efc475</sys_scope>
+        <sys_update_name>sys_script_include_c827b0ae3b20030057a4a2e334efc4d7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-15 21:14:23</sys_updated_on>
+    </sys_script_include>
+</record_update>

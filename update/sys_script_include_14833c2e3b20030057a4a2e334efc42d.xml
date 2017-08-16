@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_slack2_ah.SlackUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>SlackUtils</name>
+        <script><![CDATA[var SlackUtils = Class.create();
+SlackUtils.prototype = {
+	initialize: function() {
+	},
+	
+	htmlEscape : function(str) {
+		return str
+		.replace(/&/g, '&amp;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;');
+	},
+	
+	createPayload : function(inputs, defaultFields) {
+			var payload = {};
+			payload.text = this.htmlEscape(inputs.message);
+			
+			if (!gs.nil(inputs.channel.trim()))
+				payload.channel = inputs.channel;
+			
+			if (!gs.nil(inputs.icon.trim()))
+				payload.icon_emoji = inputs.icon_emoji.trim();
+			
+			if(!gs.nil(inputs.username.trim()))
+				payload.username = inputs.username;
+			
+			payload.attachments = [];
+			
+			var fields = [];
+			var fieldsToSend = defaultFields.split(',');
+			var _this = this;
+			
+			fieldsToSend.forEach(function (fieldName) {
+				gs.info('Processing field ' + fieldName);
+				fieldName = fieldName.trim();
+				var fieldValue = inputs.record.getDisplayValue(fieldName) || '';
+				gs.info('field value' + fieldValue);
+				var isShort = (fieldValue.length > 30 || fieldName == 'short_description') ? false : true;
+				
+				if (!gs.nil(fieldValue)){
+					fieldValue = _this.htmlEscape(fieldValue);
+					fields.push({
+						title:inputs.record[fieldName].getLabel(),
+						value:fieldValue,
+						short:isShort
+					});
+				}
+			});
+			
+			var incidentNumber = inputs.record.getDisplayValue('number');
+			var recordLink = inputs.record.getLink();
+			gs.info('link value' + recordLink);
+			var incidentLink = gs.getProperty('glide.servlet.uri') + recordLink;
+			gs.info('inci link value1' + incidentLink);
+			var incidentUrl = '<' + incidentLink + '|' + incidentNumber + '>';
+			
+			payload.attachments.push({
+				text: incidentUrl,
+				fallback: inputs.message,
+				fields: fields
+			});
+			
+			return payload;
+		},
+		
+		type: 'SlackUtils'
+	};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-15 20:55:57</sys_created_on>
+        <sys_id>14833c2e3b20030057a4a2e334efc42d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SlackUtils</sys_name>
+        <sys_package display_value="Slack2" source="sn_slack2_ah">c50b94663b20030057a4a2e334efc475</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Slack2">c50b94663b20030057a4a2e334efc475</sys_scope>
+        <sys_update_name>sys_script_include_14833c2e3b20030057a4a2e334efc42d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-15 20:55:57</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_hub_action_type_snapshot">
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <annotation/>
+        <category display_value="Webhooks">bc9b1ca63b20030057a4a2e334efc445</category>
+        <description/>
+        <label_cache>[{"name":"{{action.ah_webhook_url}}","label":"action➛Webhook URL","type":"action","ref":""},{"name":"{{action.ah_webhook_username_override}}","label":"action➛Webhook Username Override","type":"action","ref":""},{"name":"{{action.ah_slack_channel_override}}","label":"action➛Slack Channel Override","type":"action","ref":""},{"name":"{{action.ah_webhook_icon_override}}","label":"action➛Webhook Icon Override","type":"action","ref":""},{"name":"{{action.ah_message}}","label":"action➛Message","type":"action","ref":""},{"name":"{{step[75e1d139-6987-4cdb-ae61-71ec5e711e1e].payload}}","label":"step➛Create Payload➛payload","type":"step","ref":""},{"name":"{{step[a1564d84-4ea5-46cc-895f-533e8be4566c].status_code}}","label":"step➛POST Message➛Status Code","type":"step","ref":""},{"name":"{{step[a1564d84-4ea5-46cc-895f-533e8be4566c].response_body}}","label":"step➛POST Message➛Response Body","type":"step","ref":""}]</label_cache>
+        <name>Post Message</name>
+        <outputs/>
+        <parent_action display_value="Post Message">f8ab1ca63b20030057a4a2e334efc460</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-15 21:22:23</sys_created_on>
+        <sys_id>10c97cae3b20030057a4a2e334efc495</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Post Message</sys_name>
+        <sys_package display_value="Slack2" source="sn_slack2_ah">c50b94663b20030057a4a2e334efc475</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Slack2">c50b94663b20030057a4a2e334efc475</sys_scope>
+        <sys_update_name>sys_hub_action_type_snapshot_10c97cae3b20030057a4a2e334efc495</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-15 21:22:23</sys_updated_on>
+        <system_level>false</system_level>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=10c97cae3b20030057a4a2e334efc495"/>
+    <sys_variable_value action="delete_multiple" query="document_key=10c97cae3b20030057a4a2e334efc495"/>
+</record_update>

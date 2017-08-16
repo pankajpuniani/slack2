@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_hub_action_type_snapshot">
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <annotation/>
+        <category display_value="Webhooks">bc9b1ca63b20030057a4a2e334efc445</category>
+        <description/>
+        <label_cache>[{"name":"{{action.ah_webhook_url}}","label":"action➛Webhook URL","type":"action","ref":""},{"name":"{{action.ah_webhook_username_override}}","label":"action➛Webhook Username Override","type":"action","ref":""},{"name":"{{action.ah_slack_channel_override}}","label":"action➛Slack Channel Override","type":"action","ref":""},{"name":"{{action.ah_webhook_icon_override}}","label":"action➛Webhook Icon Override","type":"action","ref":""},{"name":"{{action.ah_incident_record}}","label":"action➛Incident Record","type":"action","ref":"incident"},{"name":"{{action.ah_additional_message}}","label":"action➛Additional Message","type":"action","ref":""},{"name":"{{action.ah_incident_fields_override}}","label":"action➛Incident Fields Override","type":"action","ref":""},{"name":"{{step[0546c9d2-d01f-4b81-86c7-9dd574fc1a86].payload}}","label":"step➛Create Payload➛payload","type":"step","ref":""},{"name":"{{step[a4891954-b0b5-4e63-b527-400561b9b258].status_code}}","label":"step➛Post Incident Details➛Status Code","type":"step","ref":""},{"name":"{{step[a4891954-b0b5-4e63-b527-400561b9b258].response_body}}","label":"step➛Post Incident Details➛Response Body","type":"step","ref":""}]</label_cache>
+        <name>Post Incident Details</name>
+        <outputs/>
+        <parent_action display_value="Post Incident Details">fe3fa8ea3b20030057a4a2e334efc4d5</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-15 22:02:28</sys_created_on>
+        <sys_id>abe2c1623b60030057a4a2e334efc43a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Post Incident Details</sys_name>
+        <sys_package display_value="Slack2" source="sn_slack2_ah">c50b94663b20030057a4a2e334efc475</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Slack2">c50b94663b20030057a4a2e334efc475</sys_scope>
+        <sys_update_name>sys_hub_action_type_snapshot_abe2c1623b60030057a4a2e334efc43a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-15 22:02:28</sys_updated_on>
+        <system_level>false</system_level>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=abe2c1623b60030057a4a2e334efc43a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=abe2c1623b60030057a4a2e334efc43a"/>
+</record_update>
