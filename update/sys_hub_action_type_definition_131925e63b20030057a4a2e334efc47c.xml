@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <annotation/>
+        <category display_value="Webhooks">bc9b1ca63b20030057a4a2e334efc445</category>
+        <description>The Slack Spoke for AutomationHub provides actions that a Process Analyst can use when designing flows. The actions allow them to automate sending messages about incidents and problems to a channel.  &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Use of this content requires a license &lt;a href=“https://docs.servicenow.com/?context=CSHelp:AutomationHub-licensing-information” target=“_blank”&gt;Click here for details&lt;/a&gt;</description>
+        <label_cache>[{"name":"{{action.ah_webhook_url}}","label":"action➛Webhook URL","type":"action","ref":""},{"name":"{{action.ah_additional_message}}","label":"action➛Additional Message","type":"action","ref":""},{"name":"{{action.ah_override_default_fields}}","label":"action➛Override Default Fields","type":"action","ref":""},{"name":"{{action.ah_channel}}","label":"action➛Channel","type":"action","ref":""},{"name":"{{action.ah_webhook_icon}}","label":"action➛Webhook Icon","type":"action","ref":""},{"name":"{{action.ah_webhook_username}}","label":"action➛Webhook Username","type":"action","ref":""},{"name":"{{action.ah_change}}","label":"action➛Change","type":"action","ref":"change_request"},{"name":"{{step[4f50a5f1-101b-408c-b9b2-a8b98f26565f].payload}}","label":"step➛Build Payload➛payload","type":"step","ref":""},{"name":"{{step[2ea0b9a9-7579-495e-9add-64e8e59d255e].response_body}}","label":"step➛Post Message➛Response Body","type":"step","ref":""},{"name":"{{step[2ea0b9a9-7579-495e-9add-64e8e59d255e].status_code}}","label":"step➛Post Message➛Status Code","type":"step","ref":""}]</label_cache>
+        <latest_snapshot display_value="Post Change Details">ba4aede63b20030057a4a2e334efc4e8</latest_snapshot>
+        <name>Post Change Details</name>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-16 00:49:18</sys_created_on>
+        <sys_id>131925e63b20030057a4a2e334efc47c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Post Change Details</sys_name>
+        <sys_package display_value="Slack2" source="sn_slack2_ah">c50b94663b20030057a4a2e334efc475</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Slack2">c50b94663b20030057a4a2e334efc475</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_131925e63b20030057a4a2e334efc47c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-16 00:54:30</sys_updated_on>
+        <system_level>false</system_level>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=131925e63b20030057a4a2e334efc47c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=131925e63b20030057a4a2e334efc47c"/>
+</record_update>

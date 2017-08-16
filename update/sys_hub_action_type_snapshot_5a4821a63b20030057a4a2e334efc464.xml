@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_hub_action_type_snapshot">
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <annotation/>
+        <category display_value="Webhooks">bc9b1ca63b20030057a4a2e334efc445</category>
+        <description>The Slack Spoke for AutomationHub provides actions that a Process Analyst can use when designing flows. The actions allow them to automate sending messages about incidents and problems to a channel.  &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Use of this content requires a license &lt;a href=“http://docs.servicenow.com” target=“_blank”&gt;Click here for details&lt;/a&gt;</description>
+        <label_cache>[{"name":"{{action.ah_webhook_url}}","label":"action➛Webhook URL","type":"action","ref":""},{"name":"{{action.ah_additional_message}}","label":"action➛Additional Message","type":"action","ref":""},{"name":"{{action.ah_override_default_fields}}","label":"action➛Override Default Fields","type":"action","ref":""},{"name":"{{action.ah_channel}}","label":"action➛Channel","type":"action","ref":""},{"name":"{{action.ah_webhook_icon}}","label":"action➛Webhook Icon","type":"action","ref":""},{"name":"{{action.ah_webhook_username}}","label":"action➛Webhook Username","type":"action","ref":""},{"name":"{{action.ah_problem}}","label":"action➛Problem","type":"action","ref":"problem"},{"name":"{{step[2aaf5938-1e7a-4eb9-858e-eab0600deede].payload}}","label":"step➛Build Payload➛payload","type":"step","ref":""},{"name":"{{step[8f810bc0-93ed-455f-ac9b-d9ab0e383081].status_code}}","label":"step➛Post Message➛Status Code","type":"step","ref":""},{"name":"{{step[8f810bc0-93ed-455f-ac9b-d9ab0e383081].response_body}}","label":"step➛Post Message➛Response Body","type":"step","ref":""}]</label_cache>
+        <name>Post Problem Details</name>
+        <outputs/>
+        <parent_action display_value="Post Problem Details">bb26e5663b20030057a4a2e334efc493</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-16 00:45:41</sys_created_on>
+        <sys_id>5a4821a63b20030057a4a2e334efc464</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Post Problem Details</sys_name>
+        <sys_package display_value="Slack2" source="sn_slack2_ah">c50b94663b20030057a4a2e334efc475</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Slack2">c50b94663b20030057a4a2e334efc475</sys_scope>
+        <sys_update_name>sys_hub_action_type_snapshot_5a4821a63b20030057a4a2e334efc464</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-16 00:45:41</sys_updated_on>
+        <system_level>false</system_level>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=5a4821a63b20030057a4a2e334efc464"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5a4821a63b20030057a4a2e334efc464"/>
+</record_update>
