@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_hub_action_type_definition">
-    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+<record_update table="sys_hub_action_type_snapshot">
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
-        <active>true</active>
         <annotation/>
         <category display_value="Webhooks">bc9b1ca63b20030057a4a2e334efc445</category>
-        <description>The Slack Spoke for AutomationHub provides actions that a Process Analyst can use when designing flows. The actions allow them to automate sending messages about incidents and problems to a channel.  &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Use of this content requires a license &lt;a href=“https://docs.servicenow.com/?context=CSHelp:AutomationHub-licensing-information” target=“_blank”&gt;Click here for details&lt;/a&gt;</description>
+        <description>The Slack Spoke for AutomationHub provides actions that a Process Analyst can use when designing flows. The actions allow them to automate sending messages about incidents and problems to a channel.  &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Use of this content requires a license &lt;a href=“http://docs.servicenow.com” target=“_blank”&gt;Click here for details&lt;/a&gt;</description>
         <label_cache>[{"name":"{{action.ah_webhook_url}}","label":"action➛Webhook URL","type":"action","ref":""},{"name":"{{action.ah_additional_message}}","label":"action➛Additional Message","type":"action","ref":""},{"name":"{{action.ah_override_default_fields}}","label":"action➛Override Default Fields","type":"action","ref":""},{"name":"{{action.ah_channel}}","label":"action➛Channel","type":"action","ref":""},{"name":"{{action.ah_webhook_icon}}","label":"action➛Webhook Icon ","type":"action","ref":""},{"name":"{{action.ah_webhook_username}}","label":"action➛Webhook Username ","type":"action","ref":""},{"name":"{{action.ah_incident}}","label":"action➛Incident ","type":"action","ref":"incident"},{"name":"{{step[0546c9d2-d01f-4b81-86c7-9dd574fc1a86].payload}}","label":"Build Payloadstep➛➛payload","type":"step","ref":""},{"name":"{{step[a4891954-b0b5-4e63-b527-400561b9b258].status_code}}","label":"step➛Post Message➛Status Code","type":"step","ref":""},{"name":"{{step[a4891954-b0b5-4e63-b527-400561b9b258].response_body}}","label":"step➛Post Message➛Response Body","type":"step","ref":""}]</label_cache>
-        <latest_snapshot display_value="Post Incident Details">aca1e5263b20030057a4a2e334efc438</latest_snapshot>
         <name>Post Incident Details</name>
         <outputs/>
-        <state>published</state>
-        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <parent_action display_value="Post Incident Details">fe3fa8ea3b20030057a4a2e334efc4d5</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-08-15 20:36:24</sys_created_on>
-        <sys_id>fe3fa8ea3b20030057a4a2e334efc4d5</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_created_on>2017-08-16 00:14:58</sys_created_on>
+        <sys_id>a441e1263b20030057a4a2e334efc46d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Post Incident Details</sys_name>
         <sys_package display_value="Slack2" source="sn_slack2_ah">c50b94663b20030057a4a2e334efc475</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Slack2">c50b94663b20030057a4a2e334efc475</sys_scope>
-        <sys_update_name>sys_hub_action_type_definition_fe3fa8ea3b20030057a4a2e334efc4d5</sys_update_name>
+        <sys_update_name>sys_hub_action_type_snapshot_a441e1263b20030057a4a2e334efc46d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-16 00:16:39</sys_updated_on>
+        <sys_updated_on>2017-08-16 00:14:58</sys_updated_on>
         <system_level>false</system_level>
-    </sys_hub_action_type_definition>
-    <sys_translated_text action="delete_multiple" query="documentkey=fe3fa8ea3b20030057a4a2e334efc4d5"/>
-    <sys_variable_value action="delete_multiple" query="document_key=fe3fa8ea3b20030057a4a2e334efc4d5"/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=a441e1263b20030057a4a2e334efc46d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a441e1263b20030057a4a2e334efc46d"/>
 </record_update>
